@@ -1,0 +1,239 @@
+:root {
+    --nav-bg-color: #eee;
+    --menu-bg-color: #fcfff7;
+    --content-bg-color: #fffff0;
+    --lg-weight: 900;
+    --me-weight: 700;
+    --sm-weight: 500;
+    --no-weight: 350;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    color: #292727;
+}
+
+footer {
+    background-color: #dafffd;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    width: 55%;
+    margin-left: 31rem;
+    border-top: 0.25rem solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.avatar {
+    position: fixed;
+    margin: auto;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 60%;
+    border: 0.25rem solid rgb(211, 1, 1);
+}
+
+.avatar:hover {
+    border: 0.25rem solid rgb(1, 211, 211);
+}
+
+.content {
+    position: relative;
+    width: 55%;
+    line-height: 4rem;
+    margin-left: 30rem;
+    padding-left: 1rem;
+    background-color: var(--content-bg-color);
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: var(--me-weight);
+    text-transform: capitalize;
+    color: rgb(228, 53, 0);
+    border-bottom: 3px solid #00d6cb;
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: var(--me-weight);
+    padding-bottom: 0.5rem;
+    color: rgb(0, 89, 92);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: var(--me-weight);
+    padding-bottom: 0.4rem;
+    color: rgb(0, 131, 136);
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: var(--me-weight);
+    padding-bottom: 0.3rem;
+    color: rgb(1, 187, 194);
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: var(--me-weight);
+    padding-bottom: 0.2rem;
+    color: rgb(0, 220, 228);
+}
+
+ul i {
+    font-size: 1.5rem;
+    font-weight: var(--no-weight);
+    color: rgb(63, 36, 36);
+}
+
+ul li {
+    font-size: 1.5rem;
+    font-weight: var(--no-weight);
+    color: rgb(43, 36, 63);
+}
+
+ol {
+    font-size: 1.5rem;
+    font-weight: var(--no-weight);
+    color: rgb(107, 107, 107);
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: var(--no-weight);
+    color: rgb(0, 0, 0);
+}
+
+blockquote {
+    font-size: 1.5rem;
+    word-spacing: 0.2rem;
+    font-weight: var(--me-weight);
+    font-style: italic;
+    padding: 0.25rem;
+    background-color: coral;
+}
+
+code {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    word-spacing: 0.2rem;
+    font-weight: var(--me-weight);
+    background-color: rgb(115, 255, 80);
+}
+
+label {
+    background-color: rgb(255, 121, 80);
+    color: rgb(0, 0, 0);
+}
+
+time {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: var(--me-weight);
+    color: rgb(0, 110, 255);
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 1.8rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: rgb(236, 238, 238);
+}
+
+.collapsible:hover {
+    background-color: rgb(159, 239, 250);
+}
+
+.book {
+    position: relative;
+}
+
+
+/* Popup container - can be anything you want */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* The actual popup */
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 16rem;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -8rem;
+}
+
+
+/* Popup arrow */
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+/* Toggle this class - hide and show the popup */
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
