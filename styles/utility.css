@@ -37,32 +37,52 @@ ol li {
     line-height: 3rem;
 }
 
-#list {
-    position: relative;
-    width: 60%;
-    margin-left: 31rem;
-    padding-left: 1rem;
-}
 
-#note {
-    font-size: 1rem;
-}
+@media only screen and (max-width: 600px) {
+    /* Thêm các quy tắc CSS của bạn cho thiết bị di động ở đây */
+  }
+  
+  @media only screen and (min-width: 601px) {
+    /* Thêm các quy tắc CSS của bạn cho thiết bị laptop và desktop ở đây */
+    
+    footer {
+        background-color: #dafffd;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        width: 55%;
+        margin-left: 31rem;
+        border-top: 0.25rem solid rgb(0, 0, 0);
+        text-align: center;
+    }
 
-.img {
-    position: fixed;
-    width: 25rem;
-    height: 25rem;
-    margin: auto;
-    border-radius: 50%;
-}
-
-.date {
-    font-size: 1.5rem;
-    padding-right: 1.5rem;
-    color: rgb(155, 155, 155);
-}
-
-.tag {
-    font-size: 1.5rem;
-    color: rgb(204, 5, 204);
-}
+    #list {
+        position: relative;
+        width: 60%;
+        margin-left: 31rem;
+        padding-left: 1rem;
+    }
+    
+    #note {
+        font-size: 1rem;
+    }
+    
+    .img {
+        position: fixed;
+        width: 25rem;
+        height: 25rem;
+        margin: auto;
+        border-radius: 50%;
+    }
+    
+    .date {
+        font-size: 1.5rem;
+        padding-right: 1.5rem;
+        color: rgb(155, 155, 155);
+    }
+    
+    .tag {
+        font-size: 1.5rem;
+        color: rgb(204, 5, 204);
+    }
+    
+  }
