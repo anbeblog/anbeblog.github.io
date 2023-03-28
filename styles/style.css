@@ -32,15 +32,6 @@ p {
     color: rgb(68, 125, 158);
 }
 
-#nav {
-    font-family: 'Nunito',  serif;
-    position: fixed;
-    padding-right: 1.5rem;
-    width: 29rem;
-    background-color: var(--nav-bg-color);
-    text-align: right;
-}
-
 .img {
     width: 12rem;
     height: 12.5rem;
@@ -57,6 +48,7 @@ p {
     border: 0.5rem solid rgb(50, 211, 1);
 }
 
+
 #nav a {
     font-size: 1.5rem;
     line-height: 3rem;
@@ -67,17 +59,6 @@ p {
 #nav a:hover {
     color: rgb(250, 177, 42);
     text-decoration: none;
-}
-
-.info {
-    border-bottom: 0.3rem solid #174442;
-}
-
-#menu {
-    position: relative;
-    margin-left: 30rem;
-    padding-left: 2rem;
-    background-color: var(--menu-bg-color);
 }
 
 #menu a {
@@ -95,6 +76,10 @@ p {
     text-decoration: underline;
 }
 
+.info {
+    border-bottom: 0.3rem solid #174442;
+}
+
 .list {
     padding-bottom: 1.5rem;
 }
@@ -109,3 +94,27 @@ p {
     font-size: 1.5rem;
     color: rgb(204, 5, 204);
 }
+
+@media only screen and (max-width: 600px) {
+    /* Thêm các quy tắc CSS của bạn cho thiết bị di động ở đây */
+  }
+  
+  @media only screen and (min-width: 601px) {
+    /* Thêm các quy tắc CSS của bạn cho thiết bị laptop và desktop ở đây */
+    #nav {
+        font-family: 'Nunito',  serif;
+        position: fixed;
+        padding-right: 1.5rem;
+        width: 29rem;
+        background-color: var(--nav-bg-color);
+        text-align: right;
+    }
+
+    #menu {
+        position: relative;
+        margin-left: 30rem;
+        padding-left: 2rem;
+        background-color: var(--menu-bg-color);
+    }
+    
+  }
